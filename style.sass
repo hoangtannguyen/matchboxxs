@@ -401,16 +401,20 @@ footer
 .title-product
      display: grid
      grid-template-columns: auto auto
-     grid-gap: 30px
-     padding: 0.1px 0
+     grid-gap: 70px
+     padding: 25px 0
      align-items: center
 .a 
      color: #f06
      font-size: 25px
-     font-weight: 900
+     font-weight: 550
+.b 
+     font-size: 13px  
+     color: #4d4e4f   
 .c  
      color: #28bdb3 
      text-decoration: line-through
+     font-size: 13px
 
 #hover-button
      padding: 10px 70px
@@ -418,11 +422,14 @@ footer
      color: white
      font-size: 15px
      border: none 
-     margin: 15px 0
+     
      display: none
 .description-product
-    padding: 7px 0
     color: #6d7579
+    position: relative
+    top: -35px
+    max-width: 95%
+
 .boder-product
      border: 1px solid #28bdb3 
      padding: 25px 
@@ -433,7 +440,7 @@ footer
 
 .overlay 
   position: absolute
-  top: -14px
+  top: -20px
   bottom: 0
   left: 0px
   right: 0
@@ -443,7 +450,7 @@ footer
   transition: 0.6s ease
  
 
-.product-container:hover .overlay 
+.boder-product:hover .overlay 
   opacity: 1
 
 .text 
@@ -459,15 +466,28 @@ footer
  
 
 .boder-product:hover
-     border: 1px solid red
+     // border: 1px solid #f06
+     border: none
      padding: 25px 
-     box-shadow: -4px 4px 20px  rgba(.3,.3,.3,.3)
+     box-shadow: -4px 4px 25px  rgba(.3,.3,.3,.3)
      #hover-button
           display: block
-
+.image-product
+     width: 250px
+     height: 250px
+     object-fit: cover
+.hover-image-product
+     height: 290px
+     width: 270px
+     object-fit: cover
 .angle 
      color: #605f5f
      font-size: 25px
+.icon-heart
+     font-size: 20px
+     color: #605f5f
+     position: relative
+     top: -12px
 
 @media only screen and ( max-width: 800px  )
 
