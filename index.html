@@ -76,7 +76,15 @@
 
        <div class="media-header" >
             <div>
-                <a class="icons-media" onclick="openNav()" ><i class="fa fa-bars"></i></a>
+                <a class="icons-media" onclick="openNav()" >
+                    <!-- <i class="fa fa-bars" >
+                    </i> -->
+                    <div class="container" onclick="myFunction(this)" >
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                   </div>
+                </a>
                 <a  class="icons-media" href=""><i class="fa fa-heart-o"></i></a>
             </div>
             <div id="logo-media">
@@ -93,7 +101,121 @@
 
    </header>
 
-   <section class="brand-color" style="overflow: hidden;">
+<section class="menu-media" id="myLinks">
+
+<div class="menu">
+    <div class="menu-media-font">
+        <div><br>
+            <p>FIND A STORE</p>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>SHOP</p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>THE BLOG</p>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>OUR STORY</p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>CUSTOMER SERVICE</p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>FRANCHSING</p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>THE COOKING </p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p> COOKING CLUB</p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>COOKING THE </p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>THE COOKING CLUB</p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>THE CLUB</p>
+        </div>
+        <div class="angle-menu">
+            <i class='fas fa-angle-right'></i>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>CLUB COOKING </p>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-media-font">
+        <div>
+            <p>THE COOKING CLUB</p>
+        </div>
+    </div>
+    <hr>
+   
+ 
+    
+</div>
+</section>
+
+   <section class="brand-color" id="brand-colors" style="overflow: hidden;" >
        <div class="brand">
            <div class="brand-icons"><i class='fa fa-angellist'></i> FREE AUS SHIPPING OVER $49</div>
            <div><i class='fa fa-empire'></i> 30 DAY RETURNS</div>
@@ -102,14 +224,16 @@
        </div>
    </section>
 
-   <section>
+   
+
+   <section id="slide-images">
     <div class="slide-image">
         <img src="images/3.jpg" alt="" style=" height: 450px;object-fit: cover;">
         <img src="images/4.jpg" alt="" style=" height: 450px;object-fit: cover;">
     </div>  
    </section>
 
-   <section>
+   <section id="imgae-twos">
     <div class="imgae-two">
         <div class="content-box">
             <a href="#">
@@ -183,7 +307,7 @@
 
    </section>
 
-   <section class="nav-cooker" style="overflow: hidden;">
+   <section class="nav-cooker" id="nav-cookers" style="overflow: hidden;">
        <div class="nav-sigup">
             <div><i class='far fa-thumbs-up'> SIGN UP TO BECOME A COOKING CLUB MEMBER ></i></div>
        </div>
@@ -191,7 +315,7 @@
 
 
 
-   <section style="overflow: hidden;">
+   <section style="overflow: hidden;" id="more-products">
         <div class="more-product">
             <div class="boder-product">
                 <div class="icon-heart" >
@@ -214,7 +338,7 @@
                     </div>
                 </div>
                 <div class="description-product">
-                    Pate Cromer Mug Tribeca 18 -250ml Happy New York - 9,5 Cooker 
+                    Pate Cromer Mug Tribeca 18 -250ml Happy New York - 9,5 Cooker
                 </div>
                 <div>
                     <button type="submit" id="hover-button"><i class="fa fa-eye"> QUICK VIEW</i></button>
@@ -297,7 +421,7 @@
    </section>
 
  
-   <section style="overflow: hidden;">    
+   <section style="overflow: hidden;" id="review-images">    
         <div class="review-image">
                 <div  class="content-box">
                     <a href="#">
@@ -334,14 +458,14 @@
         </div>
    </section> 
 
-    <section>
-       <div class="logo-five" style="overflow: hidden;">
+    <section id="logo-fives" style="overflow: hidden;">
+       <div class="logo-five" >
             <img src="images/20.png" alt="" style="object-fit: cover;max-width: 90%;" >
        </div>
    </section>
 
    
- <section style="overflow: hidden;">
+ <section style="overflow: hidden;" id="storys">
     <div class="story-a">
         <div class="story">
             <div class="story-our">
@@ -452,7 +576,7 @@
  </section>
 
 
-    <footer>
+    <footer id="footers">
         <div class="footer-a">
             <div class="footer-mat">
                 <div>
@@ -528,7 +652,7 @@
                 </div>
             </div>
             
-            <div class="footer-bottom">
+            <div class="footer-bottom" >
 
                 <div class="footer-fontt">
                     <div id="footer-font">
@@ -547,7 +671,7 @@
         </div>
 
 
-        <div class="footer-b">  
+        <!-- <div class="footer-b" >  
             <div class="footer-media">
                 <input type="text" id="footer-search" placeholder="Emails address">
                 <button type="submit" id="footer-button">SUBSCRIBE</button>
@@ -630,20 +754,154 @@
                 <img src="images/22.png" alt="">
             </div>
             
-        </div> 
+        </div>  -->
+
+    <div class="footer-b">
+        <div class="footer-media">
+            <input type="text" id="footer-search" placeholder="Emails address">
+            <button type="submit" id="footer-button">SUBSCRIBE</button>
+        </div>
+        <button class="accordion">FIND A STORE</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </div>
+        <button class="accordion">SHOP <i id="angle" class='fas fa-angle-down'></i></button>
+        <div class="panel">
+            <p>
+                Shale
+            </p>
+            <p>
+                Shop Brands
+            </p>
+            <p>
+                Gifts & Home
+            </p>
+            <p>
+                Drinkware
+            </p>
+            <p>
+                Tableware
+            </p>
+            <p>
+                Tableware
+            </p>
+        </div>
+        <button class="accordion">THE BLOG </button>
+        <button class="accordion">OUR STORY <i id="angle" class='fas fa-angle-down'></i></button>
+       <div class="panel">
+            <p>
+                Shale
+            </p>
+            <p>
+                Shop Brands
+            </p>
+            <p>
+                Gifts & Home
+            </p>
+            <p>
+                Drinkware
+            </p>
+            <p>
+                Tableware
+            </p>
+            <p>
+                Tableware
+            </p>
+        </div>
+        <button class="accordion">CUSTOMER SERVICE <i id="angle" class='fas fa-angle-down'></i></button>
+        <div class="panel">
+            <p>
+                Shale
+            </p>
+            <p>
+                Shop Brands
+            </p>
+            <p>
+                Gifts & Home
+            </p>
+            <p>
+                Drinkware
+            </p>
+            <p>
+                Tableware
+            </p>
+            <p>
+                Tableware
+            </p>
+        </div>
+        <button class="accordion">FRANCHSING <i id="angle" class='fas fa-angle-down'></i></button>
+        <div class="panel">
+            <p>
+                Shale
+            </p>
+            <p>
+                Shop Brands
+            </p>
+            <p>
+                Gifts & Home
+            </p>
+            <p>
+                Drinkware
+            </p>
+            <p>
+                Tableware
+            </p>
+            <p>
+                Tableware
+            </p>
+        </div>
+        <button class="accordion">THE COOKING CLUB <i id="angle" class='fas fa-angle-down'></i></button>
+        <div class="panel">
+            <p>
+                Shale
+            </p>
+            <p>
+                Shop Brands
+            </p>
+            <p>
+                Gifts & Home
+            </p>
+            <p>
+                Drinkware
+            </p>
+            <p>
+                Tableware
+            </p>
+            <p>
+                Tableware
+            </p>
+        </div>
+        <div class="footer-icon-media">
+            <div id="footer-fonts">
+                matchbox
+            </div>
+            <div style="font-size: 11px;">
+                Copyright © 2020, Matchbox
+            </div>
+        </div>
+        <div class="footer-image-media">
+            <div>
+                <span class="image-medias"><i class="fa fa-instagram" ></i></span>
+                <span class="image-medias"><i class="fa fa-facebook-f" ></i></span>
+                <span class="image-medias" ><i class="fa fa-youtube-play" ></i> </span>
+                <span class="image-medias" style="font-size: 15px;">BLOG</span>
+             </div>
+        </div>
+        <div class="footer-image-media">
+            <img src="images/22.png" alt="">
+        </div>
+        
+    </div>
+       
+
         
  </footer>
 
 
-    <div class="sidepanelxx">
-        <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>
+
+   
 
 <script src="max.js">
 

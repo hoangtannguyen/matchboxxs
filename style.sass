@@ -8,23 +8,24 @@ html,body
 nav 
      width: 100%
      background-color: #28bdb3
+     white-space: nowrap
+     overflow: hidden
      .top-nav
           display: flex
           justify-content: space-between
-          grid-template-columns: auto auto 
+          // grid-template-columns: auto auto 
           // grid-gap: 202px
-          margin: 0 85px
+          margin: 0 80px
+          padding: 0 15px
           // background-color: #2196F3
           align-items: center
           padding: 16px        
      a 
           color: white
           margin: 0 10px
-          font-size: 1.3vw
+          font-size: 20px
           text-decoration: none
-     .bot-nav
-          position: relative
-          left: 27px    
+
      span 
           color: white
           margin: 0 14px
@@ -42,10 +43,11 @@ header
           display: flex
           justify-content: space-between
           grid-template-columns: auto auto 
-          margin: 65px 102px
+          margin: 57px 92px
           // grid-gap: 372px
           line-height: 5px 
-          font-size: 1.5vw
+          font-size: 22px
+          white-space: nowrap
           align-items: center  
           a 
                text-decoration: none
@@ -53,9 +55,7 @@ header
           color: #363434  
           text-decoration: none
           margin: 0 10px   
-     .center-header
-          position: relative
-          left: 27px     
+   
 
 #header-search
      border: none
@@ -69,12 +69,15 @@ header
      font-family:  "Lato",sans-serif 
      font-weight: 800   
 ul
+     font-size: 14.5px
+     white-space: nowrap
+     overflow: auto 
      display: flex
-     justify-content: center
-     font-size: 0.9vw
-     li 
-          list-style-type: none
-          margin: 0 29px     
+     padding: 0px 68px
+     li     
+          padding: 0px 27px       
+          text-decoration: none
+          list-style-type: none    
           a                 
                text-decoration: none
                color: #4a4a4a
@@ -83,26 +86,27 @@ ul
      display: flex
      justify-content: space-between  
      align-items: center
-     margin: 15px 11px
+     margin: 21px 11px
 #media-search
      border: 0px 
      border-top: 1px solid #363434
      background-image: url('images/icons8-search-24.png')
-     background-position: 15px 10px 
+     background-position: 15px 13px 
      background-repeat: no-repeat
      width: 100%      
-     padding: 12px 50px 12px 47px
+     padding: 16px 16px 12px 55px
 
 #logo-media
      color: #28bdb3                    
      font-family:  "Lato",sans-serif 
-     font-weight: 800   
-     font-size: 8vw
+     font-weight: 550  
+     font-size: 35px
+
 
 .icons-media
      margin: 0 4px
      color: #363434 
-     font-size: 6vw
+     font-size: 25px
 
 header .media-header
      display: none     
@@ -111,18 +115,19 @@ header .search-media-header
 .brand-color
      width: 100%
      background-color: #363434
+     white-space: nowrap
+     overflow: auto
+     
 .brand
      display: flex
+     font-family: "Lato",sans-serif 
      justify-content: center
-     font-family: "Lato",sans-serif
-     padding: 15px    
-      
 .brand > div
      color: white
-     margin: 0 45px   
-     font-size: 0.9vw
+     margin: 15px 45px
+     font-size: 13px
      font-weight: 200
-     line-height: normal
+ 
 
 .imgae-two
      display: grid
@@ -327,14 +332,14 @@ footer
      display: flex
  
 
-.footer-media-font
-     display: flex
-     justify-content: space-between
-     margin: 0 20px
-     align-items: center
+// .footer-media-font
+//      display: flex
+//      justify-content: space-between
+//      margin: 0 20px
+//      align-items: center
     
-     p 
-         color: #28bdb3
+//      p 
+//          color: #28bdb3
 .footer-icon-media
      display: grid
      grid-template-columns: auto auto
@@ -370,12 +375,40 @@ footer
 .footer-b 
      display: none
 
+.accordion 
+  background-color: #363434
+  color: #28bdb3
+  padding: 25px 15px
+  width: 100%
+  text-align: left
+  border: none
+  border-bottom: 0.5px solid white
+  outline: none
+  font-size: 17px
+
+#angle
+     float: right
+     color: #605f5f
+     font-size: 25px
+     
+.panel 
+  padding: 0 18px
+  background-color: #303030
+  max-height: 0
+  color: white
+  overflow: hidden
+  transition: max-height 0.5s ease-out
+  font-size: 15px
+
+
+
 .more-product
      display: grid
      grid-template-columns: auto auto auto
      justify-content: space-around
      grid-gap: 150px
      margin: 90px 176px
+     // white-space: nowrap
 .produc-dau
      display: flex
      justify-content: space-between
@@ -428,7 +461,7 @@ footer
     color: #6d7579
     position: relative
     top: -35px
-    max-width: 95%
+    word-break: break-all
 
 .boder-product
      border: 1px solid #28bdb3 
@@ -477,9 +510,9 @@ footer
      height: 290px
      width: 270px
      object-fit: cover
-.angle 
-     color: #605f5f
-     font-size: 25px
+// .angle 
+//      color: #605f5f
+//      font-size: 25px
 .icon-heart
      font-size: 20px
      color: #605f5f
@@ -490,53 +523,57 @@ footer
 
 /// css js
 
-.sidepanelxx
-     position: relative
-     top: 100px
-.sidepanel  
-  width: 0
-  position: fixed
-  z-index: 1
-  height: 250px
-  bottom: 291px
-  left: 0
-  background-color: #111
-  overflow-x: hidden
-  transition: 0.5s
-  padding-top: 60px
+.menu-media
+     background-color: #28bdb3   
+     overflow: hidden
+     display: none
+     height: 630px
+     p 
+          color: white
+          font-size: 12px
+          font-weight: 300
+.menu-media-font
+     display: flex
+     justify-content: space-between
+     margin: -5px 11px
+     align-items: center
+     .angle-menu
+          color: white
+          margin-left: 10px
 
-.sidepanel a 
-  padding: 8px 8px 8px 32px
-  text-decoration: none
-  font-size: 25px
-  color: #818181
-  display: block
-  transition: 0.3s
-
-.sidepanel a:hover 
-  color: #f1f1f1
-
-.sidepanel .closebtn 
-  position: absolute
-  top: 0
-  right: 25px
-  font-size: 36px
-
-.openbtn 
-  font-size: 20px
+.container 
+  display: inline-block
   cursor: pointer
-  background-color: #111
-  color: white
-  padding: 10px 15px
-  border: none
-
-.openbtn:hover 
-  background-color:#444    
 
 
+.bar1, .bar2, .bar3 
+  width: 22px
+  height: 4px
+  background-color: #333
+  margin: 1.8px 0
+  transition: 0.4s
+  position: relative
+  top: 0.5px
+  
+
+.change .bar1 
+  -webkit-transform: rotate(-40deg) translate(-5px, 5px)
+  transform: rotate(-45deg) translate(-5px, 5px)
 
 
-@media only screen and ( max-width: 800px  )
+.change .bar2 
+     opacity: 0
+
+.change .bar3 
+  -webkit-transform: rotate(45deg) translate(-3px, -3px)
+  transform: rotate(45deg) translate(-3px, -3px)
+
+////import css-variables from 
+
+
+
+
+@media only screen and ( max-width: 768px  )
 
      .imgae-two
           grid-template-columns: none
@@ -591,7 +628,7 @@ footer
      .review-image
           grid-template-columns: none   
           
-
+     
               
      nav 
          .top-nav      
@@ -605,6 +642,8 @@ footer
                     display: none
                margin: 0 10px
     
+     nav span
+          margin: 0 -14px
      header .media-header
           display: flex
      header .search-media-header
@@ -628,7 +667,3 @@ footer
           display: none
      footer .footer-b 
           display: block
-// @media only screen and ( max-width: 375px  )
-//      .story .story-bot
-//           width: 118%
-            
